@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 },
                 src: [
                   "!.gitignore",
-                  "../gh-pages/**/*"
+                  "gh-pages/**/*"
                 ]
             },
             prod: {
@@ -75,7 +75,7 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'public',
                 src: ['**'],
-                dest: '../gh-pages',
+                dest: 'gh-pages',
                 filter: 'isFile'
             },
             prod: {
@@ -99,7 +99,7 @@ module.exports = function (grunt) {
               removeStyleLinkTypeAttributes: true
             },
             files: {
-              "../gh-pages/index.html": "../gh-pages/index.html"
+              "gh-pages/index.html": "gh-pages/index.html"
             }
           }
         },
@@ -107,9 +107,9 @@ module.exports = function (grunt) {
           staging: {
             files: [{
               expand: true,
-              cwd: "../gh-pages/js",
+              cwd: "gh-pages/js",
               src: "**/*.js",
-              dest: "../gh-pages/js"
+              dest: "gh-pages/js"
             }]
           }
         }
