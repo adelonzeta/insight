@@ -17,13 +17,13 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            staging: {
+            build: {
                 options: {
                   force: true
                 },
                 src: [
                   "!.gitignore",
-                  "gh-pages/**/*"
+                  "build/**/*"
                 ]
             },
             prod: {
@@ -71,11 +71,11 @@ module.exports = function (grunt) {
             }
         },
         copy: {
-            staging: {
+            build: {
                 expand: true,
                 cwd: 'public',
                 src: ['**'],
-                dest: 'gh-pages',
+                dest: 'build',
                 filter: 'isFile'
             },
             prod: {
@@ -86,7 +86,7 @@ module.exports = function (grunt) {
             }
         },
         htmlmin: {
-          staging: {
+          build: {
             options: {
               removeComments: true,
               collapseWhitespace: true,
@@ -99,17 +99,17 @@ module.exports = function (grunt) {
               removeStyleLinkTypeAttributes: true
             },
             files: {
-              "gh-pages/index.html": "gh-pages/index.html"
+              "build/index.html": "build/index.html"
             }
           }
         },
         uglify: {
-          staging: {
+          build: {
             files: [{
               expand: true,
-              cwd: "gh-pages/js",
+              cwd: "build/js",
               src: "**/*.js",
-              dest: "gh-pages/js"
+              dest: "build/js"
             }]
           }
         }
@@ -119,14 +119,14 @@ module.exports = function (grunt) {
         'bowercopy',
         'sass'
     ]);
-    grunt.registerTask('staging', [
+    grunt.registerTask('build', [
         'clean:bower',
         'bowercopy',
         'sass',
-        'clean:staging',
-        'copy:staging',
-        'htmlmin:staging',
-        'uglify:staging'
+        'clean:build',
+        'copy:build',
+        'htmlmin:build',
+        'uglify:build'
     ]);
     grunt.registerTask('deploy', [
         'clean:bower',
