@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                 force: true
               },
               src: [
-                "../adelonzeta.github.io/**/*"
+                "../gh-pages/**/*"
               ]
             },
             bower: {
@@ -80,9 +80,9 @@ module.exports = function (grunt) {
             },
             prod: {
               expand: true,
-              cwd: '../gh-pages',
+              cwd: 'build',
               src: ['**'],
-              dest: '../adelonzeta.github.io'
+              dest: '../gh-pages'
             }
         },
         htmlmin: {
@@ -132,10 +132,10 @@ module.exports = function (grunt) {
         'clean:bower',
         'bowercopy',
         'sass',
-        'clean:staging',
-        'copy:staging',
-        'htmlmin:staging',
-        'uglify:staging',
+        'clean:build',
+        'copy:build',
+        'htmlmin:build',
+        'uglify:build',
         'clean:prod',
         'copy:prod'
     ]);

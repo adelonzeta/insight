@@ -17,3 +17,13 @@ $ npm install
 ```
 $ npm run server
 ```
+
+### Build
+```
+grunt build
+```
+
+### Deploy gh-pages
+```
+grunt deploy
+```
