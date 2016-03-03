@@ -138,7 +138,6 @@ module.exports = function (grunt) {
         'sass',
         'clean:build',
         'copy:build',
-        'htmlmin:build',
         'uglify:build'
     ]);
     grunt.registerTask('deploy', [
@@ -148,7 +147,6 @@ module.exports = function (grunt) {
         'sass',
         'clean:build',
         'copy:build',
-        'htmlmin:build',
         'uglify:build',
         'clean:prod',
         'copy:prod'
