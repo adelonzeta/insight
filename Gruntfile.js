@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
     require('jit-grunt')(grunt);
+    grunt.loadNpmTasks('grunt-include-replace');
     grunt.initConfig({
         sass: {
             bluid: {
@@ -68,6 +69,10 @@ module.exports = function (grunt) {
                 options: {
                     livereload: true
                 }
+            },
+            html: {
+              files: ['*.html','partials/*.html'],
+              tasks: ['includereplace']
             }
         },
         copy: {
@@ -112,16 +117,24 @@ module.exports = function (grunt) {
               dest: "build/js"
             }]
           }
+        },
+        includereplace: {
+          public: {
+            src: "*.html",
+            dest: "public/"
+          }
         }
     });
     grunt.registerTask('default', [
         'clean:bower',
         'bowercopy',
+        'includereplace',
         'sass'
     ]);
     grunt.registerTask('build', [
         'clean:bower',
         'bowercopy',
+        'includereplace',
         'sass',
         'clean:build',
         'copy:build',
@@ -131,6 +144,7 @@ module.exports = function (grunt) {
     grunt.registerTask('deploy', [
         'clean:bower',
         'bowercopy',
+        'includereplace',
         'sass',
         'clean:build',
         'copy:build',
