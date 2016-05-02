@@ -1,0 +1,1 @@
+$(document).ready(function(){$("div[data-slick]").slick(),$(".navigation .page-navigation .dropdown").mouseover(function(){$(this).addClass("open")}).mouseout(function(){$(this).removeClass("open")}),$(".btn-input").click(function(){$(this).next().click()})});
