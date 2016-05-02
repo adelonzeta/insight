@@ -1,0 +1,71 @@
+footer
+  background-image: linear-gradient(#e3e3e3, #fdfdfd, #fdfdfd)
+  padding: 80px 0 0
+  .about
+    @extend .col-md-4
+    padding-right: 15px
+    color: #6A6A6A
+  .links
+    @extend .col-md-4
+    padding-left: 0
+    margin: 30px 0
+    border-top: solid 1px #dfdfdf
+    border-bottom: solid 1px #dfdfdf
+    padding-top: 30px
+    padding-bottom: 30px
+    a
+      color: #6A6A6A
+      text-transform: uppercase
+      font-weight: 500
+      background: transparent
+      &:hover
+        background: transparent
+        color: $accent-color
+  .newsletter
+    @extend .col-md-4
+    padding: 20px 15px 30px 15px
+    border-bottom: solid 1px #dfdfdf
+    .signup
+      label
+        text-transform: uppercase
+        color: #6A6A6A
+        margin-bottom: 20px
+        font-weight: 500
+        strong
+          display: block
+          font-size: 2em
+          letter-spacing: 2px
+      .form-control
+        border: none
+        box-shadow: none
+        border-radius: 0
+        padding: 20px 15px
+      .form-group
+        position: relative
+        border: solid 1px #ececec
+        .btn
+          position: absolute
+          top: 0
+          right: 0
+          border: none
+          border-radius: 0
+          background: $accent-color
+          color: #fff
+          padding: 10px 18px
+    .social-links
+      @extend .nav
+      @extend .nav-pills
+      margin-top: 0
+      li a
+        color: $accent-color
+        font-size: 2em
+        margin: 0 10px 0 -15px
+        background: transparent
+        &:hover
+          background: transparent
+  .brand
+    margin-bottom: 30px
+  .copyright
+    padding: 0px 0 20px
+    margin-top: 40px
+    color: #646464

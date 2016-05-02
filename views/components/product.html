@@ -1,0 +1,25 @@
+<!--(bake-start _if="grid == 3")-->
+<div class="row">
+<!--(bake-end)-->
+
+<!--(bake-start _foreach="product-name:product-names | evaluate")-->
+<div class="col-md-{{grid}} col-sm-6">
+  <div class="product">
+    <button class="btn" type="button" data-toggle="button">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+      </span>
+    </button>
+    <a href="product-single">
+      <img src="assets/thumbnail1.png" class="img-responsive" />
+      <h4>{{product-name}}</h4>
+    </a>
+  </div>
+</div>
+<!--(bake-end)-->
+
+<!--(bake-start _if="grid == 3")-->
+</div>
+<!--(bake-end)-->

@@ -1,0 +1,49 @@
+<!--(bake layouts/head.html title="Products - Insight Lighting")-->
+<!--(bake components/navigation.html)-->
+<!--(bake components/hero-photos.html active-photo="products")-->
+
+<main>
+  <section>
+    <div class="container">
+      <!--(bake components/filter.html
+        filter1="Choose a Luminaire Type"
+          option1s="['Interior','Exterior']"
+        filter2="Choose an Application"
+          option2s="['Linear Architectural','Cove','Asymmetric','Facade/Flood','Light Pipe Systems','Edge Lighting Systems','Specialty Lighting','Controls','Power Supplies & Wiring Accessories']"
+        filter3="Choose a LED Color"
+          option3s="['White & Static Colors','Active White (Tunable)','Color Changing']"
+        filter4="Choose a Product Family <span class='hidden-md'>& Code</span>"
+          option4s="['Action']"
+      )-->
+      <div class="product-list">
+        <div class="cluster">
+          <!--(bake components/product-cluster.html
+            cluster-names="[
+              'Linear Architectural - Interior',
+              'Linear Architectural - Exterior',
+              'Cove - Interior',
+              'Cove - Exterior',
+              'Asymmetric - Interior',
+              'Asymmetric - Exterior',
+              'Facade/Flood - Exterior',
+              'Light Pipe Systems'
+            ]"
+            template="family"
+          )-->
+          <!--(bake components/product-cluster.html
+            cluster-names="[
+              'Edge Lighting Systems',
+              'Specialty Lighting',
+              'Controls',
+              'Power Supplies & Wiring Accessories'            ]"
+            ]"
+            template="product"
+          )-->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--(bake components/footer.html)-->
+<!--(bake layouts/foot.html)-->

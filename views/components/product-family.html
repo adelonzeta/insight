@@ -1,0 +1,26 @@
+<!--(bake-start _foreach="family-name:family-names | evaluate")-->
+<div class="row">
+  <div class="col-md-3">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>{{family-name}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="row">
+      <!--(bake product.html
+        product-names="[
+          'Product 1',
+          'Product 2',
+          'Product 3',
+          'Product 4',
+          'Product 5',
+          'Product 6'
+        ]"
+        grid="4"
+      )-->
+    </div>
+  </div>
+</div>
+<!--(bake-end)-->

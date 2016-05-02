@@ -6,6 +6,7 @@
   margin-bottom: 0
   .top-navigation
     @extend .navbar-inverse
+    margin-top: 5px
     .left,
     .right
       @extend .nav
@@ -38,6 +39,7 @@
       margin-bottom: 0
       li a
         text-transform: uppercase
+        padding: 15px
   .main-navigation
     @extend .navbar-header
     background-image: linear-gradient(#fdfdfd, #e3e3e3)
@@ -56,12 +58,14 @@
         font-size: 0.75em
   .page-navigation
     @extend .navbar-inverse
+    margin-bottom: 10px
     ul
       @extend .nav
-      @extend .nav-pills
+      @extend .navbar-nav
       padding-left: 0
+      margin-top: 0
+      margin-bottom: 0
       li
-        margin: 0 55.7px
         width: 100%
         &:first-child
           margin-left: 0
@@ -71,11 +75,27 @@
           color: darken(#fff, 40%)
           border-radius: 0
           text-transform: uppercase
-          padding: 15px 0 10px
+          padding: 15px 15px 10px
           font-size: 1em
           border-bottom: solid 5px $navbar-inverse-bg
           &:hover
             background: transparent
             color: #fff
+        &.dropdown.open
+          a,
+          a:focus
+            background: $navbar-inverse-bg
+            border-color: $navbar-inverse-bg
+          .dropdown-menu
+            margin: 0
+            padding: 0
+            width: 100%
+            li a
+              background: darken($navbar-inverse-bg, 10%)
+              border: none
+              padding: 15px
+
   .navbar-collapse
     background: $navbar-inverse-bg
+    border-top: none
+    padding: 0

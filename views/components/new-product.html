@@ -1,0 +1,44 @@
+<!--(bake-start _foreach="number:numbers | evaluate")-->
+<div class="new-product">
+  <h2>New Product {{number}}</h2>
+  <div id="new-product-{{number}}" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#new-product-{{number}}" data-slide-to="0" class="active"></li>
+      <!--(bake-start _foreach="link:[product,product,product,product,product]")-->
+      <li data-target="#new-{{link}}-{{number}}" data-slide-to="{{link@iteration}}"></li>
+      <!--(bake-end)-->
+    </ol>
+    <div class="carousel-inner">
+      <!--(bake-start _foreach="slide:[{{number}},{{number}},{{number}},{{number}},{{number}},{{number}}]")-->
+        <!--(bake-start _if="slide@first")-->
+        <div class="item active">
+        <!--(bake-end)-->
+        <!--(bake-start _if="!slide@first")-->
+        <div class="item">
+        <!--(bake-end)-->
+          <img src="assets/product/hero{{slide}}.jpg" class="img-responsive" />
+        </div>
+      <!--(bake-end)-->
+    </div>
+  </div>
+  <div class="clearfix">
+    <a href="" class="btn btn-primary pull-left">View Project Page</a>
+    <ul class="nav nav-pills pull-right">
+      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter"></i></a></li>
+      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+      <li>
+        <a href="">
+          <span class="fa-stack">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-check fa-stack-1x fa-inverse hide"></i>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <p>Adipisicing officia deserunt tempor veniam laborum sit ullamco incididunt veniam sit ex. Aute non laboris est sit dolore fugiat nostrud. Et velit commodo elit deserunt nulla reprehenderit incididunt proident in cupidatat dolore tempor aliquip magna labore. Do est commodo nostrud commodo ullamco voluptate culpa esse aliquip.</p>
+  <p>Id ipsum reprehenderit exercitation tempor eu sint aliquip fugiat Lorem et fugiat ad aliqua. Est adipisicing ea culpa ad veniam eu Lorem culpa nulla sit enim occaecat ut ea proident ullamco. Incididunt enim reprehenderit est anim voluptate tempor fugiat tempor laboris est nulla mollit. Consectetur laboris tempor esse aute Lorem ea ut deserunt consectetur.</p>
+</div>
+<!--(bake-end)-->

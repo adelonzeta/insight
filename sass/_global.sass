@@ -1,0 +1,183 @@
+main
+  section
+    padding: 80px 0
+    &:nth-child(even)
+      background: #f7f7f7
+  h1, h2
+    margin: 0 0 20px
+  p
+    margin: 0 0 20px
+    line-height: 1.5em
+
+.dropdown-menu>li>a
+  white-space: normal
+  padding: 15px
+
+.thumbnail
+  margin: 0 0 30px
+  h3
+    margin: 0 0 20px
+  p
+    margin-bottom: 20px
+  a
+    text-transform: uppercase
+    font-weight: 700
+    color: $accent-color
+
+.slick-slider
+  margin-bottom: 0
+.about-slider
+  position: relative
+  .slick-slide
+    outline: none
+    position: relative
+    a
+      outline: none
+    button
+      position: absolute
+      right: 10px
+      top: 190px
+      z-index: 1
+      padding: 0
+      background: transparent
+      .fa-check
+        display: none
+      .fa-plus
+        display: block
+      &:focus
+        outline: none
+      &:hover
+        color: $accent-color
+      &.active
+        color: $accent-color
+        .fa-plus
+          display: none
+        .fa-check
+          display: block
+    .play-video
+      position: absolute
+      z-index: 1
+      color: #fff
+      width: 95%
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 2px
+      top: 25%
+      i
+        display: block
+        font-size: 3em
+        margin-bottom: 10px
+  .slide-prev,
+  .slide-next
+    background: transparent
+    border: none
+    color: $accent-color
+    outline: none
+    position: absolute
+    top: 25%
+    font-size: 1.8em
+    z-index: 1
+  .slide-prev
+    left: 10px
+  .slide-next
+    right: 10px
+
+.filter
+  background: #f7f7f7
+  padding: 30px
+  margin-bottom: 80px
+  .dropdown-toggle
+    text-align: left
+    margin-bottom: 20px
+    padding: 10px 12px
+    .caret
+      float: right
+      margin: 7px 0 0
+  .dropdown-menu
+    width: 100%
+  .action
+    @extend .pull-right
+    .btn
+      padding: 10px 15px
+      margin-left: 5px
+    .btn-default
+      background-color: #999
+      border-color: #999
+      color: #fff
+
+.content-slider
+  @extend .about-slider
+
+.news-page
+  h1,
+  h2
+    margin: 40px 0 30px
+    border-bottom: solid 2px $accent-color
+    padding-bottom: 20px
+  h1
+    margin-top: 30px
+
+.video
+  img
+    width: 100%
+  .wrapper
+    position: relative
+    button
+      position: absolute
+      right: 10px
+      bottom: 10px
+      z-index: 1
+      padding: 0
+      background: transparent
+      .fa-check
+        display: none
+      .fa-plus
+        display: block
+      &:focus
+        outline: none
+      &:hover
+        color: $accent-color
+      &.active
+        color: $accent-color
+        .fa-plus
+          display: none
+        .fa-check
+          display: block
+    .play-video
+      position: absolute
+      z-index: 1
+      color: #fff
+      width: 100%
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: 2px
+      top: 40%
+      i
+        display: block
+        font-size: 3em
+        margin-bottom: 10px
+
+.contacts
+  h2
+    margin: 60px 0 30px
+    border-bottom: solid 2px $accent-color
+    padding-bottom: 20px
+
+.contact
+  margin: 40px 0
+
+address
+  font-size: 1.1em
+  line-height: 1.5em
+
+.btn-input
+  padding: 55px
+  margin-bottom: 20px
+  h3
+    margin-top: 0
+
+.favorites-page
+  h2
+    margin: 40px 0 30px
+    border-bottom: solid 2px $accent-color
+    padding-bottom: 20px

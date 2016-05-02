@@ -1,0 +1,41 @@
+<!--(bake layouts/head.html title="Project Single - Insight Lighting")-->
+<!--(bake components/navigation.html)-->
+<main>
+  <section class="agent-locator">
+    <div class="container">
+      <h1>Agent Locator</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">To find agents nearest you, please use the filter and choose a region; hover over any pin for contact information.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="pull-right">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter your Search <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">United States</a></li>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">Middle East</a></li>
+                <li><a href="#">Asia</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Province <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Province 1</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:100%;'><div id='gmap_canvas' style='height:500px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">link directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:2,scrollwheel: false,center:new google.maps.LatLng(-33.8846107,151.22658609999996),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-33.8846107,151.22658609999996)});infowindow = new google.maps.InfoWindow({content:'<strong>Paddington Hair and Beauty Salon</strong><br>262 Latrobe Terrace, Paddington, Sydney, NSW<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+  </section>
+</main>
+<!--(bake components/footer.html)-->
+<!--(bake layouts/foot.html)-->

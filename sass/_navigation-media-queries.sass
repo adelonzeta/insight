@@ -2,26 +2,51 @@
 @media only screen and (min-width : 992px)
   .navigation
     .top-navigation
+      margin-top: 0
       .search
         .form-group
           button
             float: none
             margin-top: 0
-      .left li a
-        text-transform: none
+      .left li
+        margin-right: 15px
+        a
+          text-transform: none
+          &:first-child
+            padding-left: 0
     .main-navigation
       .brand
-        padding: 30px 15px
+        padding: 30px 15px 30px 0
     .page-navigation
+      margin-bottom: 0
       ul
-        padding-left: 15px
         li
-          margin: 0 30.7px
           width: auto
           a
             color: #fff
+            padding: 15px 53.8px 10px
+            border-right: solid 1px #444
+            &:first-child
+              border-left: solid 1px #444
             &:hover
-              border-color: $accent-color
+              border-bottom-color: $accent-color
+          &.dropdown.open
+            a,
+            a:focus
+              border-bottom-color: $accent-color
+              &:first-child
+                border-left: solid 1px #444
+            .dropdown-menu
+              border: none
+              box-shadow: none
+              li
+                width: 100%
+                display: block
+                a
+                  background: #E3E3E3
+                  color: $navbar-inverse-bg
+                  &:hover
+                    background: darken(#E3E3E3, 10%)
     .navbar-collapse
       background: transparent
       padding: 0
@@ -30,5 +55,5 @@
 @media only screen and (min-width : 1200px)
   .navigation
     .page-navigation
-      ul li
-        margin: 0 55.7px
+      ul li a
+        padding: 15px 73.8px 10px

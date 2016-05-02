@@ -1,0 +1,28 @@
+<section>
+  <div class="container">
+    <h2>{{title}}</h2>
+    <p>Ut tempor et deserunt duis veniam ipsum cillum pariatur nisi officia eiusmod magna duis nostrud ex. Quis in dolore ad ad ullamco ex amet deserunt id. Pariatur Lorem et aliqua do occaecat laborum cupidatat reprehenderit id commodo mollit. Occaecat ea anim exercitation velit duis ullamco occaecat non reprehenderit ullamco eu magna consequat velit anim ad aliquip.</p>
+    <div class="content-slider">
+      <div class="slides">
+        <!--(bake-start _foreach="call-to-action:call-to-actions | evaluate")-->
+        <div>
+          <button class="btn" type="button" data-toggle="button">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+            </span>
+          </button>
+          <a href="">
+            <span class="play-video {{isphoto}}"><i class="fa fa-play"></i> Play</span>
+            <img src="assets/thumbnail{{call-to-action@iteration}}.png" class="img-responsive">
+          </a>
+          <h4>Lorem Ipsum</h4>
+          <p>Cillum ullamco ad consequat anim culpa ipsum ipsum non laboris cillum reprehenderit et exercitation.</p>
+          <p><a href="" class="btn btn-primary {{hide}}">{{call-to-action}}</a></p>
+        </div>
+        <!--(bake-end)-->
+      </div>
+    </div>
+  </div>
+</section>

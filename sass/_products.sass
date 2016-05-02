@@ -1,0 +1,244 @@
+.product-list
+  h2
+    margin: 40px 0 30px
+    border-bottom: solid 2px $accent-color
+    padding-bottom: 20px
+    a
+      text-decoration: none
+      float: none !important
+      small
+        font-size: 0.5em
+      &:hover
+        small
+          color: $accent-color
+  h3
+    background: #F7F7F7
+    margin: 0 0 30px
+    padding: 30px
+    font-weight: 400
+    font-size: 1.8em
+  .product
+    position: relative
+    text-align: left
+    margin-bottom: 20px
+    a
+      text-decoration: none
+      color: #333
+    button
+      padding: 0
+      border: none
+      outline: none
+      background: transparent
+      position: absolute
+      bottom: 40px
+      right: 5px
+      .fa-check
+        display: none
+      .fa-plus
+        display: block
+      &:focus
+        outline: none
+      &:hover
+        color: $accent-color
+      &.active
+        color: $accent-color
+        .fa-plus
+          display: none
+        .fa-check
+          display: block
+
+#product-slider
+  .carousel-indicators
+    display: none
+    bottom: -60px
+    li
+      background-color: #E0E0E0
+      width: 15px
+      height: 15px
+      margin: 3px
+      &.active
+        background-color: $accent-color
+        border-color: $accent-color
+
+.product-single
+  .head
+    position: relative
+    h1
+      position: absolute
+      z-index: 1
+      bottom: 15%
+      background: #7D7D7D
+      color: #fff
+      padding: 10px 40px 10px 20px
+      font-size: 1em
+      small
+        color: #fefefe
+    .social-media
+      margin-top: 20px
+      li
+        margin-right: 20px
+        a
+          color: #333
+          padding: 0
+          font-size: 1.8em
+          &:hover
+            background: transparent
+            color: $accent-color
+    .add-to-favorites
+      font-weight: 500
+      padding: 0
+      background: transparent
+      margin-top: 20px
+      .fa-check
+        display: none
+      .fa-plus
+        display: block
+      &:focus
+        outline: none
+        box-shadow: none
+      &:hover
+        color: $accent-color
+      &.active
+        color: $accent-color
+        box-shadow: none
+        .fa-plus
+          display: none
+        .fa-check
+          display: block
+  .details
+    h2
+      margin: 60px 0 30px
+      border-bottom: solid 2px $accent-color
+      padding-bottom: 20px
+    ul
+      padding: 0 0 0 20px
+      li
+        font-size: 1.1em
+        margin-bottom: 20px
+        line-height: 1.8em
+    p
+      font-size: 1.1em
+      line-height: 1.8em
+      margin-bottom: 20px
+    .media
+      .media-left
+        vertical-align: middle
+        label
+          width: 120px
+      .colors
+        font-size: 1.5em
+      .nav
+        padding: 0
+        li
+          margin: 0 5px
+  .optics
+    margin-top: 20px
+    img
+      margin-bottom: 10px
+  .downloads
+    h2
+      text-align: center
+      margin: 60px 0 30px
+      border-bottom: solid 2px $accent-color
+      padding-bottom: 20px
+    a.well
+      display: block
+      box-shadow: none
+      border: none
+      text-align: center
+      color: #333
+      padding: 40px 20px
+      text-decoration: none
+      margin-bottom: 30px
+      h4
+        margin: 20px 0 5px
+      .fa
+        font-size: 4em
+      .fa-file-pdf-o
+        color: #D40A0A
+      .fa-file-o
+        color: #E77200
+      .fa-file-zip-o
+        color: #00B5E4
+      .fa-file-image-o
+        color: #21B94C
+  .related
+    h2
+      text-align: center
+      margin: 40px 0 30px
+      border-bottom: solid 2px $accent-color
+      padding-bottom: 20px
+    .product
+      position: relative
+      text-align: left
+      margin-bottom: 20px
+      a
+        text-decoration: none
+        color: #333
+      button
+        padding: 0
+        border: none
+        outline: none
+        background: transparent
+        position: absolute
+        bottom: 40px
+        right: 5px
+        .fa-check
+          display: none
+        .fa-plus
+          display: block
+        &:focus
+          outline: none
+        &:hover
+          color: $accent-color
+        &.active
+          color: $accent-color
+          .fa-plus
+            display: none
+          .fa-check
+            display: block
+  .configurator
+    position: relative
+    h2
+      text-align: center
+      margin: 40px 0 5px
+      border-bottom: solid 2px $accent-color
+      padding-bottom: 20px
+    .product-code
+      border-bottom: solid 2px $accent-color
+      .well
+        text-align: center
+        border: none
+        box-shadow: none
+        border-radius: 0
+        margin-bottom: 5px
+        p
+          margin-top: 40px
+          span
+            margin: 0 10px
+            font-size: 1.5em
+            font-weight: 700
+    .nav-pills
+      position: static
+      right: 0
+      top: 10px
+      margin: 20px 0
+      li:last-child
+        a
+          padding: 2px 0 2px 15px
+      a
+        color: #333
+        background: transparent
+        &:hover
+          color: $accent-color
+    &>.row
+      padding: 40px 0
+      .well
+        border: none
+        box-shadow: none
+        h3
+          margin-top: 10px
+        .row
+          text-align: center
+          img
+            margin-bottom: 10px

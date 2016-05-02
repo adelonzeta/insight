@@ -1,0 +1,87 @@
+<!--(bake layouts/head.html title="Project Single - Insight Lighting")-->
+<!--(bake components/navigation.html)-->
+<!--(bake components/hero-photos.html active-photo="project-single")-->
+<main>
+  <section class="project-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="head">
+            <div id="project-slider" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#project-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#project-slider" data-slide-to="1"></li>
+                <li data-target="#project-slider" data-slide-to="2"></li>
+                <li data-target="#project-slider" data-slide-to="3"></li>
+                <li data-target="#project-slider" data-slide-to="4"></li>
+                <li data-target="#project-slider" data-slide-to="5"></li>
+                <li data-target="#project-slider" data-slide-to="6"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="assets/projects/hero1.jpg" class="img-responsive" />
+                </div>
+                <div class="item">
+                  <img src="assets/projects/hero1.jpg" class="img-responsive" />
+                </div>
+                <div class="item">
+                  <img src="assets/projects/hero1.jpg" class="img-responsive" />
+                </div>
+                <div class="item">
+                  <img src="assets/projects/hero1.jpg" class="img-responsive" />
+                </div>
+                <div class="item">
+                  <img src="assets/projects/hero1.jpg" class="img-responsive" />
+                </div>
+                <div class="item">
+                  <img src="assets/projects/hero1.jpg" class="img-responsive" />
+                </div>
+                <div class="item">
+                  <img src="assets/projects/hero1.jpg" class="img-responsive" />
+                </div>
+              </div>
+            </div>
+            <div class="clearfix">
+              <ul class="pull-left nav nav-pills social-media">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+              <button class="btn pull-right add-to-favorites" type="button" data-toggle="button">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                  <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          <h2>Products Used</h2>
+          <div class="row">
+            <!--(bake components/product.html
+              product-names="[
+                'Product 1',
+                'Product 2',
+                'Product 3',
+                'Product 4'
+              ]"
+              grid="6"
+            )-->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h1>Project Name</h1>
+          <p>Ipsum eu ut dolor commodo labore pariatur minim anim laborum ex officia deserunt. Minim magna amet nisi et et sit id sit adipisicing minim cupidatat laboris aute ea est. Quis cillum ipsum amet aute do ea ut incididunt cupidatat. Deserunt aliqua reprehenderit laboris occaecat est dolore anim non anim ea excepteur Lorem laboris eiusmod est consequat do. Labore id est qui labore et do ut dolore.</p>
+          <h2>Project Details</h2>
+          <p>Nisi magna excepteur Lorem aute aliqua officia labore duis velit consectetur dolore est labore in dolor. Laboris enim ea cillum est sint anim consectetur minim proident adipisicing irure cillum ad non magna et laborum. Ex eiusmod adipisicing cillum esse voluptate occaecat anim esse Lorem eu reprehenderit commodo. Do deserunt excepteur exercitation reprehenderit laborum excepteur dolore consectetur ut ad et nostrud commodo tempor elit.</p>
+          <h2>Testimonial</h2>
+          <p>Culpa laboris amet fugiat ex officia magna et fugiat. Commodo labore ea ut ipsum laborum do dolor dolore laborum exercitation Lorem sint non aliquip. Ipsum occaecat non veniam culpa sint irure aliquip adipisicing labore elit esse adipisicing cillum aliquip labore aliquip. Est reprehenderit Lorem nostrud incididunt eiusmod adipisicing exercitation est aliquip occaecat laboris fugiat deserunt. Laborum aliqua voluptate esse amet non dolore ea voluptate. Tempor exercitation aute sit ex sunt id ea in mollit non. Eu nostrud esse est sint ullamco est labore ad duis amet minim non ex id. Ut aliquip aliqua ea reprehenderit dolor laboris sunt excepteur aute sint elit ullamco eiusmod dolore ex labore nostrud.</p>
+          <h2>Specs</h2>
+          <p>Ut dolor esse cupidatat in minim eiusmod nisi. Irure reprehenderit fugiat duis pariatur cillum exercitation nostrud. Voluptate occaecat sit qui pariatur culpa qui exercitation minim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--(bake components/footer.html)-->
+<!--(bake layouts/foot.html)-->

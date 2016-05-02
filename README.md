@@ -1,29 +1,14 @@
-# Insights
+# Insight Static
 
-### Install Dependencies
-```
-npm
-bower
-grunt
-sass
-```
+### Dependencies
+1. [npm](https://www.npmjs.com/)
+2. [bower](http://bower.io/)
+3. [grunt](http://gruntjs.com/)
+4. [sass](http://sass-lang.com/)
 
-### Install NPM and Bower components
+### Development Cycle
 ```
 $ npm install
-```
-
-### Start server and watch for Sass changes at 0.0.0.0:4567
-```
 $ npm run server
-```
-
-### Build
-```
-grunt build
-```
-
-### Deploy gh-pages
-```
-grunt deploy
+$ grunt deploy
 ```

@@ -1,0 +1,53 @@
+<div class="filter">
+  <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <div class="dropdown">
+        <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">{{filter1}} <span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <!--(bake-start _foreach="option1:option1s | evaluate")-->
+          <li><a href="#">{{option1}}</a></li>
+          <!--(bake-end)-->
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="dropdown">
+        <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">{{filter2}} <span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <!--(bake-start _foreach="option2:option2s | evaluate")-->
+          <li><a href="#">{{option2}}</a></li>
+          <!--(bake-end)-->
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="dropdown">
+        <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">{{filter3}} <span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <!--(bake-start _foreach="option3:option3s | evaluate")-->
+          <li><a href="#">{{option3}}</a></li>
+          <!--(bake-end)-->
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="dropdown">
+        <button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">{{filter4}} <span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <!--(bake-start _foreach="option4:option4s | evaluate")-->
+          <li><a href="#">{{option4}}</a></li>
+          <!--(bake-end)-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+      <div class="action">
+        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-default">Reset Filter</button>
+      </div>
+    </div>
+  </div>
+</div>

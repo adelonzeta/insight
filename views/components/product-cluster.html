@@ -1,0 +1,26 @@
+<!--(bake-start _foreach="cluster-name:cluster-names | evaluate")-->
+<h2>{{cluster-name}} <a href="" class="pull-right"><small>Back to Top</small></a></h2>
+
+  <!--(bake-start _if="template == 'family'")-->
+    <!--(bake product-family.html
+      family-names="[
+        'White & Static Colors',
+        'Active White (Tunable)',
+        'Color Changing'
+      ]"
+    )-->
+  <!--(bake-end)-->
+
+  <!--(bake-start _if="template == 'product'")-->
+    <!--(bake product.html
+      product-names="[
+        'Product 1',
+        'Product 2',
+        'Product 3',
+        'Product 4'
+      ]"
+      grid="3"
+    )-->
+  <!--(bake-end)-->
+
+<!--(bake-end)-->

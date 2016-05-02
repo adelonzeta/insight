@@ -1,0 +1,13 @@
+<!--(bake-start _foreach="contact:contacts | evaluate")-->
+<div class="col-md-4 col-sm-6">
+  <div class="contact text-center">
+    <h4>Customer Service</h4>
+    <img src="assets/contacts/contact-{{contact@iteration}}.png" class="img-responsive" width="100%" />
+    <h3>{{contact}}</h3>
+    <p>
+      206 555 5555 <br>
+      john.doe@insightlighting.com
+    </p>
+  </div>
+</div>
+<!--(bake-end)-->
